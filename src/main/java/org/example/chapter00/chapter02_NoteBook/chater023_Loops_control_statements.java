@@ -26,14 +26,27 @@ package org.example.chapter00.chapter02_NoteBook;
     반복횟수가 정해져 있지 않을 때 사용
 
     조건을 검색하고 해당 조건이 true인 경우 반복적 실행
+    (false명 실행 X)
     if 문의 반복 형태
+
+    do-while 문
+    기존 while 문과 다르게 조건 평가 전 먼저 실행 (최소 1회는 실행)
+    최소 한번은 실행 시키고자 할 때 사용
+
+    break;
+    반복문 또는 switch 종료 시 필요
+    루프 중간에 종료 시 사용
+
+    continue
+    현재 반복문 건너뛰기 용
+    다음 반복문을 사용할 때 사용
 
 
  */
 
 
 
-public class chater023_if_switch_for {
+public class chater023_Loops_control_statements {
     public static void main(String[] args) {
 
 
@@ -74,6 +87,23 @@ public class chater023_if_switch_for {
     for (int num : numbers) {
         System.out.println("배열 값: " + num);
     }
+    // 5. break 문 예제
+    for (int i = 1; i <= 5; i++) {
+        if (i == 3) {
+            System.out.println("i가 3이므로 반복 종료 (break)");
+            break;
+        }
+        System.out.println("break 예제 i: " + i);
+    }
+
+    // 6. continue 문 예제
+    for (int i = 1; i <= 5; i++) {
+        if (i == 3) {
+            System.out.println("i가 3이므로 이번 반복 건너뜀 (continue)");
+            continue;
+        }
+        System.out.println("continue 예제 i: " + i);
+        }
     }
 }
 
