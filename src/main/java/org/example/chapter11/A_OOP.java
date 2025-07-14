@@ -19,7 +19,7 @@ package org.example.chapter11;
 //      - 상속, 캡슐화, 추상화, 다형성은 OOP의 4가지 특성
 
 
-// 1. CRP(Single Responsibility Principle, 단일 책임 원칙)
+// 1. SRP(Single Responsibility Principle, 단일 책임 원칙)
 // - 클래스는 단 하나의 책임만을 가져야 함
 // _ 한 가지 역할(기능)만 담당 / 하나의 변화 이유만을 가져야 함
 // >> 하나의 클래스가 가지는 하나의 역할과 관련된 변경사항만 클래스에 영향을 미쳐야 함
