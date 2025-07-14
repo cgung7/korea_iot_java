@@ -53,4 +53,6 @@ public class chapter01_Note {
         bb = 20;
         cc = 30; // 초기화는 개별적으로 해야한다.
     }
+
+
 }

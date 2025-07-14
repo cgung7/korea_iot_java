@@ -52,7 +52,7 @@ public class Main {
         //    저장소를 사용하는 서비스 객체를 만든다.
         // 3. 그 서비스 객체를 InventoryService 타입의 변수 inventoryService에 저장
         InventoryService inventoryService = new InventoryServiceImpl(new InMemoryItemRepository());
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // 스캐너 실행 준비
 
         while (true) {
             System.out.println("");
@@ -67,6 +67,7 @@ public class Main {
 
             // 요류검사 try catch finally
             try {
+                // Integer.ParseInt: 문자열을 정수로 변환해주는 메서드
                 int choice = Integer.parseInt(sc.nextLine());
                 switch (choice) {
                     case 1:
@@ -112,7 +113,7 @@ public class Main {
         System.out.println("Enter Item Category (Electronics / Furniture): ");
         String category = sc.nextLine();
 
-        // if( category가 대소문자 구분없이 문자열을 구분하여(Electronics)가 맞는지 검색
+        // if( category가 대소문자 구분없이 문자열을 구분(equalsIgnoreCase)하여(Electronics)가 맞는지 검색
         if (category.equalsIgnoreCase("Electronics")) {
             System.out.println("Enter brand: ");
             String brand = sc.nextLine();
@@ -151,6 +152,8 @@ public class Main {
     }
 
     // 메서드선언 (같은 클래스만 사용가능 - private)
+    // Scanner 객체 자체를 받아서 메서드 내부에서 검색값을 받을 수 있게 만드는 구조
+    // (InventoryService service, Scanner sc)는 메서드에 외부에서 이미 생성된 객체를 매개변수로 전달받는 것
     private static void viewAllItems(InventoryService service, Scanner sc) {
         // 컬렉션타입데이터A.addAll(컬렉션타입데이터B)
         // : A의 구조에 B의 모든 데이터를 각각 요소로 삽입
