@@ -41,7 +41,7 @@ import java.util.Scanner;
 
 public class StudentManagement {
     public static void main(String[] args) {
-        List<Student> dummyStudents = new ArrayList<>();
+        List<Student> dummyStudents = new ArrayList<>(); // 더미 데이터 생성
         dummyStudents.add(new Student(1,"이승아",25,"11111"));
         dummyStudents.add(new Student(2,"이도경",29,"2222"));
         dummyStudents.add(new Student(3,"조승범",30,"33333"));
@@ -51,7 +51,7 @@ public class StudentManagement {
         Scanner sc = new Scanner(System.in);
 
         StudentView view = new StudentView(sc,controller);
-        view.showMunu();
+        view.showMenu();
 
     }
 }

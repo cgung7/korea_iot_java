@@ -28,7 +28,7 @@ package org.example.chapter12;
             : 각 구성 요소가 독립적인 기능을 책임 > 코드 관리 & 확장 용이
 
     - 유지보수 용이
-            : 애플리케이션의 비즈니스 로직과 사용자 인터페이스(User Interface)가 분리되어 유지보수가 쉬윰
+            : 애플리케이션의 비즈니스 로직과 사용자 인터페이스(User Interface)가 분리되어 유지보수가 쉬움
 
     == MVC 패턴 단점 ==
     - 복잡성 증가
@@ -74,7 +74,7 @@ class LunchView {
     }
 }
 
-// 3. Controller: Model과 View
+// 3. Controller: Model과 View를 연결하는 역할
 class LunchController {
     private LunchMenu model;
     private LunchView view;
