@@ -1,7 +1,26 @@
 package org.example.chapter00;
+class Student {
+    String name;
+    int score;
+
+    private void StudentScore(String name, int score){
+        this.name = name;
+        this.score = score;
+    }
+
+    public void name() {
+    }
+    public void score() {
+
+    }
+}
+
 
 public class E_Book2 {
     public static void main(String[] args) {
+        Student student = new Student();
+        student.name();
+        student.score();
 
         // 자바 OOP
         // '클래스' == 객체 생성 뎀플릿(설계도)
@@ -38,5 +57,9 @@ public class E_Book2 {
                         return;
                         }
          */
+
+
+
     }
+
 }
