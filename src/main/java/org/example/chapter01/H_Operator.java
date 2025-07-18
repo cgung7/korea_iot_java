@@ -57,7 +57,7 @@ public class H_Operator {
 
         System.out.println("=== 비교 연산자 ===");
         // : 좌항과 우항을 비교한 결과를 논리(boolean)값으로 반환
-        // <, >, <=(< + =), >=(< + =), ==(= + =)(일치), !=(! + =)(불일치)
+        // <, >, <=(< + =), >=(> + =), ==(= + =)(일치), !=(! + =)(불일치)
         System.out.println(5 > 3); //true
         System.out.println(5 < 3); //false
         System.out.println(5 >= 3);

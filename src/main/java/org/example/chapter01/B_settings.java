@@ -32,5 +32,7 @@ public class B_settings {
 
         // 9. 실행 : shift + f10
         // 10. 프로젝트 구조 보기(왼쪽 창) : alt + 1
+
+
     }
 }
