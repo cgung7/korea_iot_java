@@ -96,7 +96,11 @@ public class G_MethodRef {
 
         // 4. 임의 객체 인스턴스 메서드 참조
         String[] names = { "seungah", "dokyeong", "seungbeom" };
+
+        // 1) 람다 표현식
         // Function<String, String> toUpperFunc = s -> s.toUpperCase();
+
+        // 2) 메서드 참조
         Function<String, String> toUpperFunc = String::toUpperCase;
 
         for (String name: names) {
