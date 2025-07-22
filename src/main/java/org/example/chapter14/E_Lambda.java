@@ -14,6 +14,7 @@ package org.example.chapter14;
 
             cf) negate : 부정하다 (현재의 결과를 역전)
 
+    사용 예시)
     @FunctionalInterface
     interface Predicate<T> {
             boolean test(T t);
@@ -27,6 +28,7 @@ package org.example.chapter14;
             - andThen(Function after): 현재 결과를 다른 Function 입력으로 연결
             - compose(Function before): 다른 Function의 결과를 현재 입력으로 연결
 
+    사용 예시)
     @FunctionalInterface
     interface Function<T, R> {
             R apply(T t);
@@ -38,16 +40,31 @@ package org.example.chapter14;
             - void accept(T t): 입력값을 소비
             - andThen(Consumer after): 연속적인 소비 작업을 위해 사용
 
+    사용 예시)
     @FunctionalInterface
     interface Consumer<T> {
             void accept(T t);
     }
+
+    4. Supplier<T>(공급하다)
+    : 값을 공급(생성)하는 데 사용, 입력 값이 필요로 하지 X
+    : 외부에서 값을 가져오거나, 데이터를 생성하여 반환하는 역할
+    : 메서드
+        - T get(): 반환
+
+    사용 예시)
+    @FunctionalInterface
+    interface Supplier<T> {
+            T get();
+    }
+
  */
 
 
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class E_Lambda {
     public static void main(String[] args) {
@@ -87,6 +104,17 @@ public class E_Lambda {
 
         Consumer<String> combinedConsumer = printMessage.andThen(printLength);
         combinedConsumer.accept("123"); // 123 , 3
+
+        System.out.println("== Supplier ==");
+
+        // Math.random(): 0.0과 0.1 사이의 무작위 실수를 반환
+        Supplier<Double> randomValue = () -> Math.random();
+
+//        Supplier<Double> random = () -> {
+//            return Math.random();
+//        };
+
+        System.out.println(randomValue.get());
 
 
     }
