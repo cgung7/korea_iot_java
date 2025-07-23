@@ -43,17 +43,24 @@ public class D_Array_List {
         //      - 가변 X - 길이 고정,  수정은 가능
         //      - 가짜 ArrayList: Arrays 클래스 내부에서 구현된 별개의 ArrayList (컬렉션 프레임워크 X)
         //      - 배열을 리스트로 변환
-        List<String> adListVar = Arrays.asList("a", "b");
+        List<String> asListVar = Arrays.asList("a", "b");
+        //        asListVar.add("c");
+        asListVar.set(0, "c");
 
         // 3) List.of(); ***
         //      - 불변 (길이 고정, 수정 불가)
         //      - 읽기 전용 리스트 생성
         //      - null 값을 포함 불가 X
         List<String> listOfVar = List.of("a", "b");
+//        listOfVar.add("c");
+//        listOfVar.set(0, "c");
+
 
         // 4) Stream.of().collect(Collector.toList());
         //      - 가변 O (길이 변경, 수정 가능), 1번과 동일
-        List<String> collectVar = Stream.of("a","b").collect(Collectors.toList());
+        List<String> collectVar = Stream.of("a","b")
+                .collect(Collectors.toList());
+//           .toList();
 
         // 5) List.copyOf();
         //      - 불변 (길이 고정, 수정 불가)

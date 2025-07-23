@@ -17,7 +17,7 @@ package org.example.chapter13;
                 확장성 용이
         2) 단점: 구현 복잡성 증가, 작은 객체들 부적합
 
-    3. 동작 원래
+    3. 동작 원리
         1) 객체 생성 시 필요한 데이터를 저장하는 Builder 클래스를 생성
         2) Builder 클래스는 원하는 속성을 단계별로 설정할 수 있는데 메서드를 제공
         3) builder() 메서드 호출하여 객체 생성
@@ -101,8 +101,6 @@ class Pizza {
 
 }
 
-
-
 public class E_Builder {
     public static void main(String[] args) {
         // Pizza noBuilderPizza = new Pizza("파인애플 피자", "L", false, false, false);
@@ -116,6 +114,7 @@ public class E_Builder {
         Pizza optionalPizza2 = new Pizza.Builder("쉬림프 피자","L")
                 .addPepperoni()
                 .build();
+
 
         // cf) 메서드 체이닝
         //      : 메서드 호출 뒤 반환되는 데이터에 곧바로 추가 메서드를 호출
