@@ -32,8 +32,12 @@ package org.example.user_reservation;
 
  */
 
+import org.example.user_reservation.controller.ReservationController;
+
 public class Main {
     public static void main(String[] args) {
+        ReservationController controller = new ReservationController();
+        controller.run();
 
     }
 }

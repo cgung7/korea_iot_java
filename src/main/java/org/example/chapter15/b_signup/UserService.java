@@ -17,7 +17,7 @@ public class UserService {
             String passwordCheck = dto.getPasswordCheck();
 
             if (!password.equals(passwordCheck)) {
-                // 일치하지 않을 경우 예외 발생
+                // 일치하지 않을 경우 예외 발생 // 문자열 비교는 .equals() //
                 throw new Exception("비밀번호와 비밀번호 확인이 일치하지 않습니다.");
             }
 
@@ -58,6 +58,7 @@ public class UserService {
 
         User user1 = signUp(dto1);
         System.out.println(user1.getSignUpDate());
+        System.out.println(user1.getNickname() + "님이 로그인했습니다.");
 
 
 

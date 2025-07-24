@@ -32,7 +32,7 @@ public class BookView {
         } catch (Exception e) {
             System.out.println("잘못된 입력입니다. 숫자를 입력하세요.");
             sc.nextLine();
-            return -1;
+            return -1; // 메서드 종료 + 오류 신호 전달
         }
 
         return choice;
