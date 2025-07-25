@@ -41,7 +41,7 @@ public class App {
 
     private static boolean processChoice(int choice) {
         switch (choice) {
-            // 횐자 관련 기능
+            // 환자 관련 기능
             case 1: {
                 PatientCreateRequestDto requestDto = InputHandler.createPatientRequest();
 
