@@ -1,4 +1,4 @@
-package org.example.user_reservation;
+package org.example.z_project.user_reservation;
 
 /*
     === 프로젝트 개요 ===
@@ -32,7 +32,7 @@ package org.example.user_reservation;
 
  */
 
-import org.example.user_reservation.controller.ReservationController;
+import org.example.z_project.user_reservation.controller.ReservationController;
 
 public class Main {
     public static void main(String[] args) {

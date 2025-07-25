@@ -1,4 +1,4 @@
-package org.example.user_reservation.entity;
+package org.example.z_project.user_reservation.entity;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

@@ -1,0 +1,16 @@
+#repository : 저장서
+
+Patient repository : 환자 저장소
+
+환자 정보에 대한 기능을 저장 하는 클래스
+
+findAll: 모든 환자 검색
+
+findById: 특정 환자 검색
+
+delete: 특정 환자 삭제
+
+save: 환자 생성(Create), 수정(Update)
+
+
+

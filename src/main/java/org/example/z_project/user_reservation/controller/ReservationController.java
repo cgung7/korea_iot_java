@@ -1,10 +1,10 @@
-package org.example.user_reservation.controller;
+package org.example.z_project.user_reservation.controller;
 
-import org.example.user_reservation.dto.ReservationResponseDto;
-import org.example.user_reservation.dto.UserLoginRequestDto;
-import org.example.user_reservation.dto.UserRegisterRequestDto;
-import org.example.user_reservation.service.implement.ReservationServiceImpl;
-import org.example.user_reservation.service.implement.UserServiceImpl;
+import org.example.z_project.user_reservation.dto.ReservationResponseDto;
+import org.example.z_project.user_reservation.dto.UserLoginRequestDto;
+import org.example.z_project.user_reservation.dto.UserRegisterRequestDto;
+import org.example.z_project.user_reservation.service.implement.ReservationServiceImpl;
+import org.example.z_project.user_reservation.service.implement.UserServiceImpl;
 
 import java.util.List;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package org.example.user_reservation.dto;
+package org.example.z_project.user_reservation.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

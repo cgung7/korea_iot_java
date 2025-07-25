@@ -1,6 +1,6 @@
-package org.example.user_reservation.repository;
+package org.example.z_project.user_reservation.repository;
 
-import org.example.user_reservation.entity.Reservation;
+import org.example.z_project.user_reservation.entity.Reservation;
 
 import java.util.ArrayList;
 import java.util.List;

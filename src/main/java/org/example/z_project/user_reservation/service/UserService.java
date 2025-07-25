@@ -1,9 +1,9 @@
-package org.example.user_reservation.service;
+package org.example.z_project.user_reservation.service;
 
 
-import org.example.user_reservation.dto.UserLoginRequestDto;
-import org.example.user_reservation.dto.UserRegisterRequestDto;
-import org.example.user_reservation.entity.User;
+import org.example.z_project.user_reservation.dto.UserLoginRequestDto;
+import org.example.z_project.user_reservation.dto.UserRegisterRequestDto;
+import org.example.z_project.user_reservation.entity.User;
 
 import java.util.Optional;
 
